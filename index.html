@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de formulario HTML y CSS</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="containerBase">
+
+        <div class="container">
+            <form class="formulario" action="" method="get" >
+                <h1 class="title_form">Contacto</h1>
+                <legend class="legend">Envianos tus comentarios</legend>
+    
+                <label for="nombre" class="label">Nombre: </label>
+                <input type="text" 
+                       name="name" 
+                       placeholder="Coloque su nombre"
+                       title="Escriba su Nombre" 
+                       required 
+                       pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                       class="form_input">  
+    
+                <label for="apellido" class="label">Apellido</label>
+                <input type="text" 
+                       name="apellido" 
+                       placeholder="Coloque su apellido"
+                       title="Escriba su Apellido" 
+                       required 
+                       pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                       class="form_input">
+     
+                <label for="correo" class="label"> Correo:</label>       
+                <input type="email" 
+                       name="email" 
+                       placeholder="Escriba su correo"
+                       title="Email Incorrecto" 
+                       required
+                       pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" class="form_input">
+    
+                <textarea class="textarea" 
+                          cols="50" 
+                          rows="5" 
+                          placeholder="Escriba un comentario" 
+                          required
+                          title="Tu comentario no puede exceder los 255 caracteres"
+                          pattern="^.{1,255}$">
+                </textarea>
+    
+                <input type="submit" value="Enviar" class="button">
+                
+            </form>
+    
+            <section class="containerDerecho">
+                <h1 class="containerDerecho_title">Contact Information</h1>
+                <p class="containerDerecho_parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum autem culpa quam voluptatum libero unde tempore? Quisquam reprehenderit ratione sequi.
+                </p>
+    
+                <h2 class="containerDerecho_subtitle">Direction</h2>
+                <p class="containerDerecho_description">miami united states</p>
+    
+                <h2 class="containerDerecho_subtitle">Phone</h2>
+                <p class="containerDerecho_description">+548 210000458</p>
+    
+                <h2 class="containerDerecho_subtitle">Email:</h2>
+                <p class="containerDerecho_description">correo@gmail.com</p>
+            </section>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
